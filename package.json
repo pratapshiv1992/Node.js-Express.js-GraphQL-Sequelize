@@ -1,0 +1,22 @@
+{
+  "name": "node.js-express.js-graphql-sequelize",
+  "version": "1.0.0",
+  "description": "It's a basic tutorial of node.js, express.js, grahpQL, and sequelize ORM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratapshiv1992/Node.js-Express.js-GraphQL-Sequelize.git"
+  },
+  "author": "Shiv pratap singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pratapshiv1992/Node.js-Express.js-GraphQL-Sequelize/issues"
+  },
+  "homepage": "https://github.com/pratapshiv1992/Node.js-Express.js-GraphQL-Sequelize",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
