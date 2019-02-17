@@ -1,10 +1,10 @@
 const config = {
-        host: "localhost",
-        username: "root",
-        password: "",
-        database: "upwork",
-        port: 3306,
-        SECRET: "KUHDASKHFDKASHFKJSDAHFKJH"
+        host: "host address",
+        username: "username***",
+        password: "password***",
+        database: "db name ***",
+        port: 'port ***',
+        SECRET: "secret ***"
     }
 
 module.exports = config;
