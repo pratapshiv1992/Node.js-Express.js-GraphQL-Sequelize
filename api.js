@@ -7,7 +7,7 @@ router.use("/graphql",eGraphql(req => {
         schema,
         graphiql:true,
         context:{
-            user: req.user
+            req: req
         }
     })
 }));
