@@ -1,7 +1,7 @@
 const app = require('express')();
 const port = 3000;
-const routes = require('./routes.js');
-const graphQLApi = require('./api.js');
+const routes = require('./routes/routes.js');
+const graphQLApi = require('./graphql/api.js');
 
 app.use(routes);
 app.use(graphQLApi);
