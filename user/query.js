@@ -1,4 +1,4 @@
-const { GraphQLNonNull ,GraphQLString} = require("graphql");
+const { GraphQLNonNull ,GraphQLString,GraphQLList } = require("graphql");
 const { user } = require('../db');
 const { userType } = require('./userType');
 
@@ -11,4 +11,14 @@ async resolve(parent, args, context) {
     return await user.findOne({where:{email:args.email},raw:true }).catch(e=>console.error(e));
 }};
 
-module.exports = {getUser};
+
+const getAllUser = {
+type: GraphQLList(userType),
+async resolve(parent, args, context) {
+    return await user.findAll({raw:true}).catch(e=>console.error(e));
+}};
+
+module.exports = {
+    getUser,
+    getAllUser
+};
